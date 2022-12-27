@@ -1,0 +1,28 @@
+body{
+    background-color: aquamarine;
+    height: 100%;
+    width:90%
+}
+h2{
+    text-align: center;
+}
+.splitter-body{
+    background-color: beige;
+    
+    margin-left: 300px;
+
+}
+
+.splitter-input{
+float: left;
+width:50%;
+background-color: white;
+border-radius: 5px;
+}
+
+.splitter-output{
+float:right;
+width:50%;
+background-color: rgb(94, 26, 158);
+border-radius: 5px;
+}

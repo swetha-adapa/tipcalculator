@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta  charset="UTF-8">
+        <meta name="viewport" content="widthvice", initial-scale="1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>tip calculator</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <h2 >S P l I <br > T T E R</h2>
+      <div class="splitter-body">
+        <form class="splitter-input">
+          <div class="input-box">
+            <label for="bill">Bill</label>
+            <span class="error" id="billError">Can't be zero</span>
+            <div class="input-enter">
+              <img src="data:image/png;base64,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
+              " height="20px" width="20px" alt="bill-icon" />
+              <input type="number" id="bill" placeholder="0" min="0" />
+            </div>
+          </div>
+          <div class="input-box">
+            <h2>Select Tip %</h2>
+            <div class="input-tip">
+              <div class="tip-enter">
+                <input type="radio" name="tip" id="5" value="0.5" />
+                <label for="5">5%</label>
+              </div>
+              <div class="tip-enter">
+                <input type="radio" name="tip" id="10" value="0.10" />
+                <label for="10">10%</label>
+              </div>
+              <div class="tip-enter">
+                <input type="radio" name="tip" id="15" value="0.15" />
+                <label for="15">15%</label>
+              </div>
+              <div class="tip-enter">
+                <input type="radio" name="tip" id="25" value="0.25" />
+                <label for="25">25%</label>
+              </div>
+              <div class="tip-enter">
+                <input type="radio" name="tip" id="50" value="0.50" />
+                <label for="50">50%</label>
+              </div>
+              <div class="tip-enter" id="tip-custom">
+                <input
+                  type="number"
+                  name="tip"
+                  id="custom"
+                  placeholder="Custom"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="people">Number of People</label>
+            <span class="error" id="peopleError">Can't be zero</span>
+            <div class="input-enter">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTaGCY5mrFgzT9XVQ-MhLuluJ9i2ii8g4S_-lgPPZ_LJ2C5cguYe2Jpvmy94thLgnAAcs&usqp=CAU "
+              height="20px" width="20px" alt="bill-icon" />
+              <input type="number" id="people" placeholder="0" min="0"/>
+            </div>
+          </div>
+        </form>
+        <div class="splitter-output">
+          <div class="output-box">
+            <div class="output-text">
+              <h1>Tip Amount</h1>
+              <label>/ person</label>
+            </div>
+            <div class="output-result">
+              <img src="data:image/png;base64,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
+              " height="20px" width="20px" alt="bill-icon" />
+              <h1 id="tipAmount">0.00</h1>
+            </div>
+          </div>
+          <div class="output-box">
+            <div class="output-text">
+              <h1>Total</h1>
+              <span>/ person</span>
+            </div>
+            <div class="output-result">
+              <img src="data:image/png;base64,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
+              " height="20px" width="20px" alt="bill-icon" />
+              <h1 id="total">0.00</h1>
+            </div>
+          </div>
+          <button id="reset">RESET</button>
+        </div>
+      </div>
+    
+  </body>
+  <script src="script.js"></script>
+</html>
+        
